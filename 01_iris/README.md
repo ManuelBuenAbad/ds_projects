@@ -15,10 +15,15 @@ In this end-to-end project, I
 3. Use domain knowledge and unsupervised learning for feature engineering.
 4. Employ rigorous feature selection methods.
 5. Construct automated pipelines that, in addition to performing the steps listed above:
+
 	a. employ various state-of-the-art AI/ML/DL algorithms,
+	
 	b. cross validate them,
+	
 	c. tunes their hyperparameters, and
+	
 	d. produces statistical and explanatory ML reports (including metrics such as the F1 score, plotting SHAP values, etc.)
+	
 6. Evaluate the models, select the best, and save it locally.
 
 
