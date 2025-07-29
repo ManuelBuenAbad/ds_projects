@@ -12,7 +12,7 @@ In this end-to-end project, I
 
 1. Collect, transform, and deploy the data in various ways (ETL), including a thorough, automated cleaning of the same.
 2. Engage in painstaking exploratory analysis (EDA) through statistics and data visualization reports.
-3. Use domain knowledge and unsupervised learning for feature engineering.
+3. Use domain knowledge and both supervised and unsupervised learning for feature engineering.
 4. Employ rigorous feature selection methods.
 5. Construct automated pipelines that, in addition to performing the steps listed above:
 
