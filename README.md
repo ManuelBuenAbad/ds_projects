@@ -8,9 +8,9 @@ Description
 
 Currently, this collection includes the following projects:
 
-- 01_iris:	A classification problem with the classic iris dataset.
-- 02_penguins:	A classification problem with the penguin dataset.
-- 03_homes:	A regression problem with the Ames IA homes dataset.
+- `01_iris`:		A classification problem with the classic iris dataset.
+- `02_penguins`:	A classification problem with the penguin dataset.
+- `03_homes`:		A regression problem with the Ames IA homes dataset.
 
 
 
