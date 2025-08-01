@@ -26,7 +26,13 @@ In this end-to-end project, I
 	
 6. Evaluate the models, select the best, and save it locally.
 
+Dashbord
+-----------------------------------------
 
+![Tableau Dashboard preview](iris_dashboard_screenshot.png)
+
+-> **Live demo**: https://github.com/ManuelBuenAbad/ds_projects/tree/main/01_iris/index.html
+-> **Tableau Public - Dashboard**: [The Iris Dataset](https://public.tableau.com/views/TheIrisDataset_17540796746250/Separability?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
 
 Requirements
 -----------------------------------------
