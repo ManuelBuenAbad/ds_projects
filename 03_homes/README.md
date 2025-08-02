@@ -10,11 +10,11 @@ The dataset consists of 1,460 training and 1,460 test records of 80 features of 
 
 In this end-to-end project, I
 
-1. Collect, transform, and deploy the data in various ways (ETL), including a thorough, automated cleaning of the same.
-2. Engage in painstaking exploratory analysis (EDA) through statistics and data visualization reports.
-3. Use domain knowledge and both supervised and unsupervised learning for feature engineering.
-4. Employ rigorous feature selection methods.
-5. Construct automated pipelines that, in addition to performing the steps listed above:
+1. collect, transform, and deploy the data in various ways (ETL), including a thorough, automated cleaning of the same;
+2. engage in painstaking exploratory analysis (EDA) through statistics and data visualization reports;
+3. use domain knowledge and both supervised and unsupervised learning for feature engineering;
+4. employ rigorous feature selection methods;
+5. construct automated pipelines that, in addition to performing the steps listed above:
 
 	a. employ various state-of-the-art AI/ML/DL algorithms (including stacked and boosted ensamble models),
 	
@@ -22,9 +22,9 @@ In this end-to-end project, I
 	
 	c. tunes their hyperparameters, and
 	
-	d. produces statistical and explanatory ML reports (including metrics such as the RMSE score, plotting SHAP values, etc.)
+	d. produces statistical and explanatory ML reports (including metrics such as the RMSE score, plotting SHAP values, etc.); and
 	
-6. Evaluate the models, select the best, and save it locally.
+6. evaluate the models, select the best, and save it locally.
 
 Because this project is so long and complex, I have broken down the notebook into two parts: `03_homes_01.ipynb`, and `03_homes_02.ipynb`.
 

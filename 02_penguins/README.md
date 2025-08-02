@@ -10,11 +10,11 @@ The dataset consists of 343 records of three species of antarctic penguins: adel
 
 In this end-to-end project, I
 
-1. Collect, transform (including cleaning), and deploy the data in various ways (ETL).
-2. Engage in thorough exploratory analysis (EDA) through statistics and data visualization reports.
-3. Use domain knowledge and unsupervised learning for feature engineering.
-4. Employ rigorous feature selection methods.
-5. Construct automated pipelines that, in addition to performing the steps listed above:
+1. collect, transform (including cleaning), and deploy the data in various ways (ETL);
+2. engage in thorough exploratory analysis (EDA) through statistics and data visualization reports;
+3. use domain knowledge and unsupervised learning for feature engineering;
+4. employ rigorous feature selection methods;
+5. construct automated pipelines that, in addition to performing the steps listed above:
 
 	a. employ various state-of-the-art AI/ML/DL algorithms,
 	
@@ -22,9 +22,9 @@ In this end-to-end project, I
 	
 	c. tunes their hyperparameters, and
 	
-	d. produces statistical and explanatory ML reports (including metrics such as the F1 score, plotting SHAP values, etc.)
+	d. produces statistical and explanatory ML reports (including metrics such as the F1 score, plotting SHAP values, etc.);
 	
-6. Evaluate the models, select the best, and save it locally.
+6. evaluate the models, select the best, and save it locally.
 
 
 📊 Dashboard
