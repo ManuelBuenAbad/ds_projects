@@ -27,6 +27,17 @@ In this end-to-end project, I
 6. Evaluate the models, select the best, and save it locally.
 
 
+📊 Dashboard
+-----------------------------------------
+
+**Tableau Public Dashboard**: _"The Penguins Dataset"_.
+
+💡 [Live Demo](./demo/index.html)
+
+🔗 [Public Link](https://public.tableau.com/views/ThePenguinsDataset/PenguinMeasurements?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
+
+![Tableau Dashboard preview](./demo/penguins_dashboard_screenshot.png)
+
 
 ❓ Requirements
 -----------------------------------------
