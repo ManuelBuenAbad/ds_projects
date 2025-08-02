@@ -1,9 +1,9 @@
-# ds_projects/01_iris
+# `ds_projects/01_iris`
 
-An end-to-end classification project with the classic iris dataset.
-Written by Manuel A. Buen-Abad.
+**An end-to-end classification project with the classic iris dataset.
+Written by Manuel A. Buen-Abad.**
 
-Description
+📄 Description
 -----------------------------------------
 
 The original dataset consists of 150 measurement records of three species of iris flowers: iris setosa, iris versicolor, and iris virginica. These are measurements of the length and width of the petals and sepals of the flowers. This is a balanced dataset: there are 50 records for each species.
@@ -26,15 +26,16 @@ In this end-to-end project, I
 	
 6. Evaluate the models, select the best, and save it locally.
 
-Dashbord
+📊 Dashboard
 -----------------------------------------
 
 ![Tableau Dashboard preview](iris_dashboard_screenshot.png)
 
--> **Live demo**: https://github.com/ManuelBuenAbad/ds_projects/tree/main/01_iris/index.html
--> **Tableau Public - Dashboard**: [The Iris Dataset](https://public.tableau.com/views/TheIrisDataset_17540796746250/Separability?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
+💡 **Live demo**: https://github.com/ManuelBuenAbad/ds_projects/tree/main/01_iris/index.html
 
-Requirements
+🔗 **Tableau Public - Dashboard**: [The Iris Dataset](https://public.tableau.com/views/TheIrisDataset_17540796746250/Separability?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
+
+❓ Requirements
 -----------------------------------------
 
 1. python

@@ -1,9 +1,9 @@
-# ds_projects/03_homes
+# `ds_projects/03_homes`
 
-An end-to-end regression project with the Ames IA homes dataset.
-Written by Manuel A. Buen-Abad.
+**An end-to-end regression project with the Ames IA homes dataset.
+Written by Manuel A. Buen-Abad.**
 
-Description
+📄 Description
 -----------------------------------------
 
 The dataset consists of 1,460 training and 1,460 test records of 80 features of various homes sold in the city of Ames, IA; the training dataset also includes the prices at which each home was sold.
@@ -28,7 +28,7 @@ In this end-to-end project, I
 
 Because this project is so long and complex, I have broken down the notebook into two parts: `03_homes_01.ipynb`, and `03_homes_02.ipynb`.
 
-Requirements
+❓ Requirements
 -----------------------------------------
 
 1. python

@@ -1,9 +1,9 @@
-# ds_projects/02_penguins
+# `ds_projects/02_penguins`
 
-An end-to-end classification project with the penguins dataset.
-Written by Manuel A. Buen-Abad.
+**An end-to-end classification project with the penguins dataset.
+Written by Manuel A. Buen-Abad.**
 
-Description
+📄 Description
 -----------------------------------------
 
 The dataset consists of 343 records of three species of antarctic penguins: adelie (_Pygoscelis adeliae_), chinstrap (_Pygoscelis antarcticus_), and gentoo (_Pygoscelis papua_). These records include the following features: the island they inhabit, their bill, flipper, and weight measurements, and their sex. This is an unbalanced dataset: there are different number of entries for each species.
@@ -28,7 +28,7 @@ In this end-to-end project, I
 
 
 
-Requirements
+❓ Requirements
 -----------------------------------------
 
 1. python
