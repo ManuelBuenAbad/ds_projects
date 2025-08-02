@@ -35,7 +35,7 @@ In this end-to-end project, I
 
 🔗 [Public Link](https://public.tableau.com/views/TheIrisDataset_17540796746250/Separability?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
 
-![Tableau Dashboard preview](iris_dashboard_screenshot.png)
+![Tableau Dashboard preview](./demo/iris_dashboard_screenshot.png)
 
 
 ❓ Requirements
