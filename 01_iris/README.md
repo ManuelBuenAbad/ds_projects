@@ -29,9 +29,11 @@ In this end-to-end project, I
 📊 Dashboard
 -----------------------------------------
 
-[💡 **Tableau Public - Live Dashboard Demo**](./demo/index.html)
+**Tableau Public Dashboard**: _"The Iris Dataset"_.
 
-🔗 **Tableau Public - Dashboard Link**: [The Iris Dataset](https://public.tableau.com/views/TheIrisDataset_17540796746250/Separability?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
+💡 [Live Demo](./demo/index.html)
+
+🔗 [Public Link](https://public.tableau.com/views/TheIrisDataset_17540796746250/Separability?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
 
 ![Tableau Dashboard preview](iris_dashboard_screenshot.png)
 
