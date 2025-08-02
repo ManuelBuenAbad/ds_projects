@@ -29,7 +29,7 @@ In this end-to-end project, I
 📊 Dashboard
 -----------------------------------------
 
-[💡 **Tableau Public - Live Dashboard Demo**](./index.html)
+[💡 **Tableau Public - Live Dashboard Demo**](./demo/index.html)
 
 🔗 **Tableau Public - Dashboard Link**: [The Iris Dataset](https://public.tableau.com/views/TheIrisDataset_17540796746250/Separability?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
 
