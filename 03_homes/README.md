@@ -28,6 +28,19 @@ In this end-to-end project, I
 
 Because this project is so long and complex, I have broken down the notebook into two parts: `03_homes_01.ipynb`, and `03_homes_02.ipynb`.
 
+
+📊 Dashboard
+-----------------------------------------
+
+**Tableau Public Dashboard**: _"The Ames, IA Housing Dataset"_.
+
+💡 [Live Demo](./demo/index.html)
+
+🔗 [Public Link](https://public.tableau.com/views/TheAmesIAHousingDataset/JointPlots?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
+
+![Tableau Dashboard preview](./demo/homes_dashboard_screenshot.png)
+
+
 ❓ Requirements
 -----------------------------------------
 
