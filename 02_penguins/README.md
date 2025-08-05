@@ -27,6 +27,15 @@ In this end-to-end project, I
 6. evaluate the models, select the best, and save it locally.
 
 
+📒 Notebook
+-----------------------------------------
+**Jupyter Notebook**: `01_iris.ipynb`
+
+📓 [Up-to-date Notebook](./notebooks/02_penguins.ipynb)
+
+📌 [Snapshot](./notebooks/index.html)
+
+
 📊 Dashboard
 -----------------------------------------
 
