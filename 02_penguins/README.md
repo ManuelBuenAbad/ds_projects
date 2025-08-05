@@ -29,7 +29,7 @@ In this end-to-end project, I
 
 📒 Notebook
 -----------------------------------------
-**Jupyter Notebook**: `01_iris.ipynb`
+**Jupyter Notebook**: `02_penguins.ipynb`
 
 📓 [Up-to-date Notebook](./notebooks/02_penguins.ipynb)
 
