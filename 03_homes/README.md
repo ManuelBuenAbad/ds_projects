@@ -33,7 +33,7 @@ Because this project is so long and complex, I have broken down the notebook int
 -----------------------------------------
 **Jupyter Notebook**: `03_homes.ipynb`
 
-📓 [Up-to-date Notebook](./notebooks/03_homes.ipynb)
+📓 Up-to-date Notebook: [Part 1](./notebooks/03_homes_01.ipynb), [Part 2](./notebooks/03_homes_02.ipynb)
 
 📌 [Snapshot](./notebooks/index.html)
 
