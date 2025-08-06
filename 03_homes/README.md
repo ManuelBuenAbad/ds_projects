@@ -29,6 +29,15 @@ In this end-to-end project, I
 Because this project is so long and complex, I have broken down the notebook into two parts: `03_homes_01.ipynb`, and `03_homes_02.ipynb`.
 
 
+📒 Notebook
+-----------------------------------------
+**Jupyter Notebook**: `03_homes.ipynb`
+
+📓 [Up-to-date Notebook](./notebooks/03_homes.ipynb)
+
+📌 [Snapshot](./notebooks/index.html)
+
+
 📊 Dashboard
 -----------------------------------------
 
