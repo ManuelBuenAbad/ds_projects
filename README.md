@@ -11,6 +11,7 @@ Currently, this collection includes the following projects:
 - [`01_iris`](./01_iris/):		A classification problem with the classic iris dataset.
 - [`02_penguins`](./02_penguins/):	A classification problem with the penguin dataset.
 - [`03_homes`](./03_homes/):		A regression problem with the Ames IA homes dataset.
+- [`04_cds`](./04_cds/):		A classification problem with the CD banking clients dataset.
 
 
 
@@ -28,3 +29,4 @@ Currently, this collection includes the following projects:
 9. shap
 10. graphviz
 11. dill
+12. AWS (Amazon Web Services, for `04_cds`)
