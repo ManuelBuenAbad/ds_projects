@@ -8,7 +8,7 @@ Written by Manuel A. Buen-Abad.**
 
 The dataset consists of 41,188 records of 20 features of bank clients. The target is to predict whether the client bought a certificate of deposit (CD) or not.
 
-This project was made via Amazon SageMaker AI, one of the Amazon Web Services (AWS) products. In particular, I used Canvas and Autopilot in order to quickly analyze and preprocess the data, as well as create and train a ML model. The final result is a weighted ensemble model that includes linear regression, extremely randomized trees, NN, and random forest estimators.
+This project was made via Amazon SageMaker AI, one of the Amazon Web Services (AWS) products. In particular, I used Canvas and Autopilot in order to quickly analyze and preprocess the data, as well as create and train a ML model. The final result is a weighted ensemble model that includes linear regression, extremely randomized trees, NN, and random forest estimators. I achieved an **F1-score** of almost **68%**, and an **accuracy** above **91%**.
 
 
 📒 Amazon SageMaker AI - Notebook
