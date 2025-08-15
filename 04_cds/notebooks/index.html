@@ -7598,6 +7598,79 @@ to train models as per the selected configuration.</p>
 </div>
 </div>
 </div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=d6889bc4-a624-4a61-a7cc-1694e3c08151">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id="Quick-Definition">Quick Definition<a class="anchor-link" href="#Quick-Definition">¶</a></h3>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=b667973e-4e97-41b5-820f-164c880f5d20">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [23]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="o">!</span>aws<span class="w"> </span>ec2<span class="w"> </span>describe-instance-types<span class="w"> </span><span class="err">\</span>
+  <span class="o">--</span><span class="n">filters</span> <span class="n">Name</span><span class="o">=</span><span class="n">free</span><span class="o">-</span><span class="n">tier</span><span class="o">-</span><span class="n">eligible</span><span class="p">,</span><span class="n">Values</span><span class="o">=</span><span class="n">true</span> \
+  <span class="o">--</span><span class="n">query</span> <span class="s2">"InstanceTypes[*].[InstanceType]"</span> \
+  <span class="o">--</span><span class="n">output</span> <span class="n">text</span> <span class="o">|</span> <span class="n">sort</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>c7i-flex.large
+m7i-flex.large
+t3.micro
+t3.small
+t4g.micro
+t4g.small
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=efe41388-5f5b-45b9-9d9a-2db39b838ac4">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>First, defining the "free instance" we can work with:</p>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=a108147a-09e2-439a-979c-ebd6fc45542d">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [25]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># free_instance = 'ml.t3.medium' # for notebooks</span>
+
+<span class="n">free_instance</span> <span class="o">=</span> <span class="s1">'ml.m5.xlarge'</span> <span class="c1"># for training!</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
 <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=4008db25">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
@@ -7614,7 +7687,7 @@ Those artifacts will be downloaded to <strong>Canvas1755114245361-artifacts</str
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [1]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="o">!</span>mkdir<span class="w"> </span>-p<span class="w"> </span>Canvas1755114245361-artifacts
@@ -7640,12 +7713,29 @@ look for generated candidates, and where input and output data is stored on Amaz
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=2aea080e">
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=385742e3-86d0-4e41-9bf4-cb059ebfdd13">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p><strong>N.B.</strong>
+Upon running the cell below you may get <code>ProfileNotFound: The config profile (default) could not be found</code> Error.</p>
+<p>The solution is to go to the newly downloaded <code>Canvas1755114245361-artifacts/sagemaker_automl_ensemble/config.py</code> script, and to change <em>line 57</em> from</p>
+<p><code>session = boto3.Session(profile_name='default')</code></p>
+<p>to</p>
+<p><code>session = boto3.Session()</code>.</p>
+<p>After that, save the file to overwrite it.</p>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=2aea080e">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [2]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">sagemaker_automl_ensemble</span><span class="w"> </span><span class="kn">import</span> <span class="n">AutoMLLocalEnsembleRunConfig</span><span class="p">,</span> <span class="n">uid</span>
@@ -7676,6 +7766,32 @@ look for generated candidates, and where input and output data is stored on Amaz
 </div>
 </div>
 </div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>sagemaker.config INFO - Not applying SDK defaults from location: /etc/xdg/sagemaker/config.yaml
+sagemaker.config INFO - Not applying SDK defaults from location: /home/sagemaker-user/.config/sagemaker/config.yaml
+</pre>
+</div>
+</div>
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-OutputArea-output" data-mime-type="text/markdown" tabindex="0">
+<p>This notebook is initialized to use the following configuration:
+<table>
+<tr><th rowspan="2">Base AutoML Job</th><th>Job Name</th><td>Canvas1755114245361</td></tr>
+<tr><th>Base Output S3 Path</th><td>s3://sagemaker-us-east-1-857316592663/Canvas/default-20250813T115399/Training/output/Canvas1755114245361</td></tr>
+<tr><th rowspan="5">Interactive Job</th><th>Job Name</th><td>Canvas1755-notebook-run-15-02-43-54</td></tr>
+<tr><th>Base Output S3 Path</th><td>s3://sagemaker-us-east-1-857316592663/Canvas/default-20250813T115399/Training/output/Canvas1755114245361/Canvas1755-notebook-run-15-02-43-54</td></tr>
+</table></p>
+</div>
+</div>
+</div>
+</div>
 </div>
 <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=d129fd7e">
 <div class="jp-Cell-inputWrapper" tabindex="0">
@@ -7687,12 +7803,12 @@ look for generated candidates, and where input and output data is stored on Amaz
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=c5430f62">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=c5430f62">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [3]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">ipywidgets</span><span class="w"> </span><span class="kn">import</span> <span class="n">interact</span>
@@ -7700,6 +7816,30 @@ look for generated candidates, and where input and output data is stored on Amaz
 <span class="n">trials_dropdown</span> <span class="o">=</span> <span class="n">AUTOML_LOCAL_ENSEMBLE_RUN_CONFIG</span><span class="o">.</span><span class="n">dropdown</span>
 <span class="n">interact</span><span class="p">(</span><span class="n">AUTOML_LOCAL_ENSEMBLE_RUN_CONFIG</span><span class="o">.</span><span class="n">select_trial</span><span class="p">,</span> <span class="n">trials_dropdown</span><span class="o">=</span><span class="n">trials_dropdown</span><span class="p">)</span>
 </pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
+<table><tr><td>num_bag_sets</td><td>1</td></tr><tr><td>included_model_types</td><td>XT, RF, NN_TORCH, FASTAI, LR</td></tr><tr><td>presets</td><td>good_quality</td></tr><tr><td>auto_stack</td><td>true</td></tr><tr><td>num_stack_levels</td><td>0</td></tr></table>
+</div>
+</div>
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>interactive(children=(Dropdown(description='trials_dropdown', options=(1, 2, 3, 4, 5, 6, 7, 8, 9, 10), value=1…</pre>
+</div>
+</div>
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[3]:</div>
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
+<pre>&lt;function ipywidgets.widgets.interaction._InteractFactory.__call__.&lt;locals&gt;.&lt;lambda&gt;(*args, **kwargs)&gt;</pre>
 </div>
 </div>
 </div>
@@ -7756,16 +7896,28 @@ of the model that exhibited the highest validation score. Only valid if refit_fu
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=8f73a03a">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=8f73a03a">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [4]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">AUTOML_LOCAL_ENSEMBLE_RUN_CONFIG</span><span class="o">.</span><span class="n">display_candidate</span><span class="p">()</span>
 </pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
+<table><tr><td>num_bag_sets</td><td>1</td></tr><tr><td>included_model_types</td><td>['XT', 'RF', 'NN_TORCH', 'FASTAI', 'LR']</td></tr><tr><td>presets</td><td>['good_quality']</td></tr><tr><td>auto_stack</td><td>True</td></tr><tr><td>num_stack_levels</td><td>0</td></tr></table>
 </div>
 </div>
 </div>
@@ -7782,17 +7934,52 @@ of the model that exhibited the highest validation score. Only valid if refit_fu
 </div>
 </div>
 </div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=e0b92bbf-ba04-49cd-bffb-0d53ac5dfe65">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [24]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">AUTOML_LOCAL_ENSEMBLE_RUN_CONFIG</span><span class="o">.</span><span class="n">prepare_processor_args</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[24]:</div>
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
+<pre>{'network_config': &lt;sagemaker.network.NetworkConfig at 0x7f26884bf8c0&gt;,
+ 'role': 'arn:aws:iam::857316592663:role/service-role/AmazonSageMaker-ExecutionRole-20250813T115301',
+ 'image_uri': '473393118567.dkr.ecr.us-east-1.amazonaws.com/autopilot-autogluon:1',
+ 'instance_count': 1,
+ 'instance_type': 'ml.r5.16xlarge',
+ 'volume_size_in_gb': 250,
+ 'max_runtime_in_seconds': 172800}</pre>
+</div>
+</div>
+</div>
+</div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=2b7b2e27">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [14]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">sagemaker.processing</span><span class="w"> </span><span class="kn">import</span> <span class="n">Processor</span>
 
 <span class="n">processor_args</span> <span class="o">=</span> <span class="n">AUTOML_LOCAL_ENSEMBLE_RUN_CONFIG</span><span class="o">.</span><span class="n">prepare_processor_args</span><span class="p">()</span>
+
+<span class="n">processor_args</span><span class="p">[</span><span class="s1">'instance_type'</span><span class="p">]</span> <span class="o">=</span> <span class="n">free_instance</span> <span class="c1"># MANUEL -&gt; updated instance to free</span>
+
 <span class="n">processor</span> <span class="o">=</span> <span class="n">Processor</span><span class="p">(</span><span class="o">**</span><span class="n">processor_args</span><span class="p">,</span> <span class="n">tags</span><span class="o">=</span><span class="p">[{</span><span class="s1">'Key'</span><span class="p">:</span> <span class="s1">'sagemaker:is-canvas-resource'</span><span class="p">,</span> <span class="s1">'Value'</span><span class="p">:</span> <span class="s1">'True'</span><span class="p">},</span> <span class="p">{</span><span class="s1">'Key'</span><span class="p">:</span> <span class="s1">'sagemaker:service:source:additionalMetadata'</span><span class="p">,</span> <span class="s1">'Value'</span><span class="p">:</span> <span class="s1">'canvas:notebook:tabular'</span><span class="p">}])</span>
 
 <span class="n">processing_inputs</span> <span class="o">=</span> <span class="n">AUTOML_LOCAL_ENSEMBLE_RUN_CONFIG</span><span class="o">.</span><span class="n">prepare_processing_inputs</span><span class="p">()</span>
@@ -7814,12 +8001,12 @@ of the model that exhibited the highest validation score. Only valid if refit_fu
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=6ea0b9b4">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=6ea0b9b4">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [15]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">IPython.display</span><span class="w"> </span><span class="kn">import</span> <span class="n">display</span><span class="p">,</span> <span class="n">Markdown</span>
@@ -7834,6 +8021,31 @@ of the model that exhibited the highest validation score. Only valid if refit_fu
     <span class="n">logs</span> <span class="o">=</span> <span class="kc">False</span>
 <span class="p">)</span>
 </pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-OutputArea-output" data-mime-type="text/markdown" tabindex="0">
+<p>Creating Processing Job Canvas1755-notebook-run-15-02-43-54, please track the progress from <a href="https://us-east-1.console.aws.amazon.com/sagemaker/home?region=us-east-1#/processing-jobs/Canvas1755-notebook-run-15-02-43-54">here</a>.</p>
+</div>
+</div>
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
+<pre>INFO:sagemaker:Creating processing-job with name Canvas1755-notebook-run-15-02-43-54
+</pre>
+</div>
+</div>
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>..............................................................................................................................................................................................................................................!</pre>
 </div>
 </div>
 </div>
@@ -7855,12 +8067,12 @@ of the model that exhibited the highest validation score. Only valid if refit_fu
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=eca78182">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=eca78182">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [26]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">sagemaker.model</span><span class="w"> </span><span class="kn">import</span> <span class="n">Model</span>
@@ -7868,12 +8080,39 @@ of the model that exhibited the highest validation score. Only valid if refit_fu
 <span class="n">model_args</span> <span class="o">=</span> <span class="n">AUTOML_LOCAL_ENSEMBLE_RUN_CONFIG</span><span class="o">.</span><span class="n">prepare_model_args</span><span class="p">()</span>
 <span class="n">model</span> <span class="o">=</span> <span class="n">Model</span><span class="p">(</span><span class="o">**</span><span class="n">model_args</span><span class="p">)</span>
 
-<span class="n">model</span><span class="o">.</span><span class="n">deploy</span><span class="p">(</span><span class="n">initial_instance_count</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span>
-             <span class="n">instance_type</span><span class="o">=</span><span class="s1">'ml.m5.12xlarge'</span><span class="p">,</span>
+<span class="c1"># model.deploy(initial_instance_count=2,</span>
+<span class="c1">#              instance_type='ml.m5.12xlarge',</span>
+<span class="c1">#              endpoint_name="AutoML-{}".format(processing_job_name),</span>
+<span class="c1">#              wait=True,</span>
+<span class="c1">#              tags=[{'Key': 'sagemaker:is-canvas-resource', 'Value': 'True'}, {'Key': 'sagemaker:service:source:additionalMetadata', 'Value': 'canvas:notebook:tabular'}])</span>
+
+<span class="n">model</span><span class="o">.</span><span class="n">deploy</span><span class="p">(</span><span class="n">initial_instance_count</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="c1"># MANUEL -&gt; updated to 1</span>
+             <span class="n">instance_type</span><span class="o">=</span><span class="s1">'ml.m5.large'</span><span class="p">,</span> <span class="c1"># MANUEL -&gt; updated</span>
              <span class="n">endpoint_name</span><span class="o">=</span><span class="s2">"AutoML-</span><span class="si">{}</span><span class="s2">"</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">processing_job_name</span><span class="p">),</span>
              <span class="n">wait</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
              <span class="n">tags</span><span class="o">=</span><span class="p">[{</span><span class="s1">'Key'</span><span class="p">:</span> <span class="s1">'sagemaker:is-canvas-resource'</span><span class="p">,</span> <span class="s1">'Value'</span><span class="p">:</span> <span class="s1">'True'</span><span class="p">},</span> <span class="p">{</span><span class="s1">'Key'</span><span class="p">:</span> <span class="s1">'sagemaker:service:source:additionalMetadata'</span><span class="p">,</span> <span class="s1">'Value'</span><span class="p">:</span> <span class="s1">'canvas:notebook:tabular'</span><span class="p">}])</span>
 </pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
+<pre>INFO:sagemaker:Creating model with name: autogluon-inference-2025-08-15-04-06-26-813
+INFO:sagemaker:Creating endpoint-config with name AutoML-Canvas1755-notebook-run-15-02-43-54
+INFO:sagemaker:Creating endpoint with name AutoML-Canvas1755-notebook-run-15-02-43-54
+</pre>
+</div>
+</div>
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>------!</pre>
 </div>
 </div>
 </div>
