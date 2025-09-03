@@ -56,8 +56,9 @@ In this end-to-end project, I
 3. seaborn
 4. numpy
 5. pandas
-6. scikit-learn
-7. xgboost
-8. shap
-9. graphviz
-10. dill
+6. statsmodels
+7. scikit-learn
+8. xgboost
+9. shap
+10. graphviz
+11. dill

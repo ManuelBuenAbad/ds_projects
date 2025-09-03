@@ -58,9 +58,10 @@ Because this project is so long and complex, I have broken down the notebook int
 3. seaborn
 4. numpy
 5. pandas
-6. scikit-learn
-7. xgboost
-8. catboost
-9. shap
-10. graphviz
-11. dill
+6. statsmodels
+7. scikit-learn
+8. xgboost
+9. catboost
+10. shap
+11. graphviz
+12. dill
